@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h5, .fw-bold {
+    font-family: 'Playfair Display', serif;
+}
+
+.basket-item img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.basket-item {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.basket-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    background-color: #fcfcfc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .fw-bold {
+    font-size: 1.2rem;
+}
+
+.btn-success {
+    background-color: #3A7D44;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-success:hover {
+    background-color: #316E3A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-success {
+    color: #3A7D44 !important;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .basket-item {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .basket-item img {
+        margin-bottom: 10px;
+    }
+
+    .ms-auto {
+        margin-top: 10px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+/* General Styles for Header */
+.navbar {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+    color: #3A7D44;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3A7D44;
+    text-decoration: underline;
+}
+
+.btn-success {
+    background-color: #3A7D44;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: #316E3A;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .btn-success {
+        margin: 0 auto;
+    }
+}
